@@ -1,7 +1,8 @@
 # practical-test-ui
 ## Practical Test Project
 
-### Steps to run the Project.
+### Steps to run the Project.'
+i) Extract the project folder 
 1) In the project directory run  => <b>npm i </b> to install dependencies for node 
 2) Navigate to the client folder and run =>  <b>npm i </b> to install dependencies for react and redux
 3)  Node Server is running in <b>PORT 3001</b> and React is running on <b>Port 3000</b> and proxied to Port 3001.This will allow us to make requests to our Node server without having to provide the origin it is running on (http://localhost:3001) every time we make a network request to it.
