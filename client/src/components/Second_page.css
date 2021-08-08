@@ -1,0 +1,268 @@
+body {
+  background: "#b9eaf321";
+}
+h1,
+h2,
+h3,
+h4,
+p,
+label {
+  color: #000000ba;
+}
+
+.goBackAnchor {
+  position: absolute;
+  top: 3%;
+  color: blue;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+  padding: 0 0rem 1rem 1rem;
+}
+.illustrations {
+  /* width: calc(100vw - 46rem); */
+  height: 20rem;
+}
+.illustrations > img {
+  width: 100%;
+  max-width: 27rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0rem 5rem;
+}
+.centerHeading {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cycle {
+  margin-top: 4rem;
+  position: relative;
+  width: calc(100vw - 5rem);
+  height: calc(100vw - 5rem);
+  /* adjust the things below  */
+  max-width: calc(100vw - 60rem);
+  max-height: calc(100vw - 60rem);
+  background-color: transparent;
+  border-top-left-radius: 100%; /* 
+  100px of height + 10px of border */
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%; /*
+  
+  /*
+  100px of height + 10px of border */
+  border-top: 5px solid gray;
+  border-right: 5px solid gray;
+  border-bottom: 0;
+  border-left: 0;
+  border-style: dashed;
+}
+
+.cycleImage1 {
+  background: white;
+  border-radius: 50%;
+  padding: 1rem;
+  /* background: repeat; */
+  position: absolute;
+  left: -8%;
+  /* display: flex; */
+  /* align-items: center; */
+  top: 36%;
+  width: 15%;
+  min-width: 3rem;
+}
+
+.cycleImage1Label {
+  position: absolute;
+  top: 57%;
+  left: -4%;
+  width: 15%;
+  font-size: 0.9rem;
+  min-width: 3rem;
+}
+
+.cycleImage2 {
+  background: white;
+  border-radius: 50%;
+  padding: 1rem;
+  position: absolute;
+  left: 42%;
+  top: -8%;
+  width: 15%;
+  min-width: 3rem;
+  min-width: 3rem;
+}
+
+.cycleImage2Label {
+  position: absolute;
+  left: 46%;
+  top: 12%;
+  width: 15%;
+  font-size: 0.9rem;
+}
+
+.cycleImage3 {
+  background: white;
+  border-radius: 50%;
+  padding: 1rem;
+  position: absolute;
+  top: 35%;
+  right: -9%;
+  width: 15%;
+  min-width: 3rem;
+  min-width: 3rem;
+}
+
+.cycleImage3Label {
+  position: absolute;
+  top: 54%;
+  right: -9%;
+  width: 15%;
+  font-size: 0.9rem;
+}
+.cycleImage4 {
+  background: white;
+  border-radius: 50%;
+  padding: 1rem;
+  position: absolute;
+  left: 42%;
+  bottom: -8%;
+  width: 15%;
+  min-width: 3rem;
+  min-width: 3rem;
+}
+
+.cycleImage4Label {
+  position: absolute;
+  left: 46%;
+  bottom: 12%;
+  width: 15%;
+  font-size: 0.9rem;
+}
+
+.cycleCenterText {
+  position: absolute;
+  top: 27%;
+  padding: 14% 10% 0 17%;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #46c8e0;
+  padding: 2rem;
+}
+.servicesContainer > h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.tabContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-gap: 1vw;
+  padding: 0 1rem 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  color: #000000ba;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.tab:hover {
+  color: turquoise;
+  cursor: pointer;
+}
+
+.tacticsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.tacticsContainer > * {
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .cycle {
+    max-width: unset;
+    max-height: unset;
+    width: unset;
+    height: unset;
+  }
+  .cycleCenterText {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .cycle {
+    max-width: unset;
+    max-height: unset;
+    width: calc(100vw - 16rem);
+    height: calc(100vw - 16rem);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cycleImage4Label {
+    font-size: 0.7rem;
+  }
+  .cycleImage3Label {
+    font-size: 0.7rem;
+  }
+  .cycleImage2Label {
+    font-size: 0.7rem;
+  }
+  .cycleImage1Label {
+    font-size: 0.7rem;
+  }
+}
+.addButton {
+  border-radius: 50%;
+  font-size: 1rem;
+  color: grey;
+  float: right;
+}
+.addButton:hover {
+  cursor: pointer;
+}
+.submit {
+  float: right;
+  margin: 1rem;
+  font-size: 1rem;
+  background: #313c8a;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+.submit:hover {
+  cursor: pointer;
+  background: #737582;
+  transition: all 1s;
+}
